@@ -26,6 +26,8 @@ def display_forecast_weather(city_name):
         date = datetime.fromtimestamp(timestamp)
         formatted_day = date.strftime("%A")
         temperature = day['temperature']['day']
+        
+        if date.date() != datetime.today().date():
         print(f"{formatted_day}: {round(temperature)}ºC")
 
 
