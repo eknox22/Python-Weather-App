@@ -36,7 +36,7 @@ def display_forecast_weather(city_name):
             display_temperature(formatted_day, round(temperature))
         
 def credit():
-    print("\n[blue bold]This app was built by Emily Knox-Clifton[blue bold]")
+    print("\n[red bold]This app was built by Emily Knox-Clifton[red bold]")
     
 def welcome():
     print("[purple bold]Welcome to my weather app[/purple bold]")
@@ -52,4 +52,3 @@ if city_name:
     credit()
 else:
       print("Please try again with a city")
-
