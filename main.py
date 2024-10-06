@@ -11,7 +11,7 @@ def display_current_weather(city):
     current_weather_city = current_weather_data['city']
     current_weather_temperature = current_weather_data['temperature']['current']
 
-    print(f"The temperature in {current_weather_city} is {round(current_weather_temperature)}ºC")
+    print(f"Today: {round(current_weather_temperature)}ºC")
 
 def display_forecast_weather(city_name):
     api_key = "t61a3de96178c340b47o7ff32962bb7f"
@@ -34,6 +34,8 @@ city_name = city_name.strip()
 
 if city_name:
     display_current_weather(city_name)
+    
+    print('\n[green bold]Forecast: [/green bold]')
     display_forecast_weather(city_name)
 else:
     print('Please try again with a city.')
