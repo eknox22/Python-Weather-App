@@ -26,7 +26,7 @@ def display_forecast_weather(city_name):
         date = datetime.fromtimestamp(timestamp)
         formatted_day = date.strftime("%A")
         temperature = day['temperature']['day']
-        print(f"{'temperature'}ºC")
+        print(f"{formatted_day}: {round(temperature)}ºC")
 
 
 city_name = input('Enter a city: ')
